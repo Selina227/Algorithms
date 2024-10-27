@@ -10,15 +10,11 @@ function binaryToDec(binary) {
 console.log(binaryToDec("1101"));
 
 function decToBinary(dec) {
-  for (let i = 0; i < dec.digit; i++) {
-    if (dec[dec.digit % 2] === 0) {
-      binary.digit = 0;
-    }
-    if (dec[dec.digit % 2] === 1) {
-      binary.digit = 1;
-    }
+  let binary = 0;
+  while (dec > 0) {
+    dec = Math.floor(dec / 2);
+    binary = (dec % 2) + binary;
   }
-  let binary = binary.digit;
   return binary;
 }
 console.log(decToBinary("13"));

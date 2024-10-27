@@ -7,4 +7,4 @@ function getSpaces(spaces, yes, today) {
   }
   return count;
 }
-console.log(getSpaces(5, 'CC..C", ".CC.."'));
+console.log(getSpaces(5, "CC..C", ".CC.."));
